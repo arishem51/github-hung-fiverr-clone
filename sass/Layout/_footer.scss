@@ -1,0 +1,108 @@
+footer{
+    border-top: 1px solid $color-grey-6;
+    .footer__content{
+        padding-top: 64px;
+        padding-bottom: 24px;
+        display: flex;
+        border-bottom: 1px solid $color-grey-6;
+        .footer__items{
+            width: 20%;
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                margin-right: 32px;
+                letter-spacing: .7px;
+                p{
+                    line-height: 140%;
+                    @include styleText($color-grey-3,$fs-0,$fw-1);
+                }
+                li{
+                    a{
+                        @include styleText($color-grey-1,$fs-0,$fw-0);
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        transition: .2s all;
+                        p{
+                            @include styleText($color-grey-9,$fs-0 - 2 ,$fw-0);
+                        }
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    margin-bottom: $ds-4;
+                }
+            }
+        }
+    }
+    .footer__bottom{
+        padding-top: $ds-6;
+        padding-bottom: $ds-4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer__bottom__left{
+            p{
+                @include styleText($color-grey-2,$fs-2 + 4,$fw-1);
+                margin-right: $ds-3;
+                margin-bottom: 0;
+                span{
+                    @include styleText($color-grey-9,$fs-0 - 2, $fw-0);
+                }
+            }
+        }
+        .footer__bottom__right{
+            display: flex;
+            align-items: center;
+            ul{
+                display: flex;
+                justify-content: flex-end;
+                margin: 0;
+                li{
+                    list-style: none;
+                    i{
+                        @include styleText($color-grey-2,$fs-18,$fw-1);
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        margin: 0 $ds-2;
+                        border-radius: 50%;
+                        &:hover{
+                            background-color:  $color-grey-11;
+                        }
+                    }
+                }
+            }
+            .footer__icon{
+                
+                span{
+                    @include styleText($color-grey-1,$fs-0 - 2,$fw-1);
+                    margin: 0 $ds-1 - 3;
+                    padding: $ds-1 $ds-3;
+                    &:hover{
+                        color: $color-grey-3;
+                        background-color: $color-grey-7;
+                        border-radius: 54px;
+                    }
+                }
+                span:last-child{
+                    display: inline-block ;
+                    text-align: center;
+                    width: 31px;
+                    height: 31px;
+                    border-radius: 50%;
+                    border: 1px solid $color-grey-2;
+                    padding: 0;
+                    line-height: 31px;
+                    transition: .2s all;
+                    &:hover{
+                        color: $color-grey-3;
+                        background-color: $color-grey-7;
+                        border-color: $color-grey-7;
+                    }
+                }
+            }
+        }
+    }
+}

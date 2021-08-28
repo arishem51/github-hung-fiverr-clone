@@ -1,0 +1,40 @@
+.services{
+    .services__content{
+        margin-bottom: 96px;
+        h3{
+            display: inline-block;
+            @include styleText($color-black-1,$fs-3,$fw-2);
+            line-height: 120%;
+            letter-spacing: 1px;
+            margin-bottom: $ds-6;
+        }
+        .services__owl{
+            .item{
+                position: relative;
+                img{
+                    object-fit: cover;
+                    height: 345px;
+                    width: 100%;
+                    border-radius: $border-radius;
+                }
+                .services__text{
+                    position: absolute;
+                    top: 5%;
+                    left: 7%;
+                    z-index: 10;
+                    
+                    p{
+                        @include styleText($color-white-1,$fs-0,$fw-0);
+                        margin-bottom: 0;
+                        text-transform: capitalize;
+                    }
+                    h4{
+                        @include styleText($color-white-1,$fs-3 - 5,$fw-2);
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.trusted{
+    margin-bottom: 96px;
+    background-color: $color-grey-7;
+    .trusted__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            @include styleText($color-grey-9,$fs-18,$fw-1);
+            padding-right: $ds-5;
+        }
+        ul{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 $ds-5;
+            li{
+                display: inline-block;
+                padding-right: $ds-9 + 8;
+            }
+        }
+        
+    }
+}

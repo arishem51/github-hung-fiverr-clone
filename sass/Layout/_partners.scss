@@ -1,0 +1,99 @@
+.partners{
+    padding: 96px 0;
+    
+    .partners__content{
+        display: flex;
+        .partners__video{
+           position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: $border-radius;
+            }
+            .partners__iconPlay{
+                @include iconPlay();
+            }
+        }
+        .partners__text{
+            align-self: center;
+            p{
+                @include styleText($color-green-3,$fs-3,$fw-1 - 100);
+                font-style: italic;
+            }
+            padding: 0 $ds-9;
+            .partners__text__content{
+                display: flex;
+                p{
+                    @include styleText($color-grey-1,$fs-1,$fw-0);
+                    padding-bottom: 16px;
+                    margin: 0;
+                    line-height: 36px;
+                }
+                img{
+                    border-left: 1px solid #c5c6c9;
+                    height: 36px;
+                    margin-left: 16px;
+                    width: auto;
+                }
+            }
+            
+        }
+    }
+    .partners__logo{
+        position: relative;
+        display: flex;
+        background-color: $color-blue-1;
+        margin-top: 96px;
+        overflow: hidden;
+        .partners__wrapper{
+            padding: 36px 0 36px 76px;
+            .partners__fiverr{
+                display: flex;
+                p{
+                    @include styleText($color-white-1,$fs-2,$fw-0);
+                    margin: 0;
+                }
+                span{
+                   align-self: center;
+                    margin-left: $ds-3;
+                    small{
+                        text-transform: uppercase;
+                        @include styleText($color-white-1,$fs-0 - 4 , $fw-1);
+                    }
+                }
+            }
+            h3{
+                @include styleText($color-white-1,$fs-3 + 2 ,$fw-1);
+                i{
+                    font-weight: 100;
+                }
+                letter-spacing: 1px;
+                margin:$ds-4 0;
+                width: 89%;
+            }
+            p{
+                color: $color-white-1;
+                margin-bottom: $ds-6;
+            }
+            .partners__logo__button{
+                @include styleButton($color-blue-1,$color-white-1,$color-blue-1,$fs-0,$fw-1,$ds-3,$ds-6);
+                line-height: 100%;
+                border-radius: $border-radius;
+                transition: .5s all;
+                position: relative;
+                z-index: 2;
+                &:hover{
+                    background-color: $color-blue-4;
+                }
+            }
+        }
+        img{
+            position: absolute;
+            top: -22% ;
+            left: -10%;
+            width: 110%;
+            z-index: 1;
+            object-fit: contain;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.owl-carousel{
+    position: relative;
+    .owl-nav{
+        button.owl-prev{
+            left: -30px;
+        }
+        button.owl-next{
+            right: -30px;
+        }
+        button.owl-next,button.owl-prev{
+            position: absolute;
+            top: 42%;
+            width: 48px;
+            height: 48px;
+            background-color: $color-white-1;
+            border-radius: 50%;
+            line-height: 45px;
+            text-align: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            &:hover{
+                color: $color-black-1;
+                background-color: $color-white-1;
+            }
+            span{
+                font-size: $ds-7;
+            }
+        }
+    }
+}

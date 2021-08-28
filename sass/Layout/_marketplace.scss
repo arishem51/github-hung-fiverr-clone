@@ -1,0 +1,53 @@
+.marketplace{
+    .marketplace__content{
+        margin-bottom: 96px;
+        ul{
+            margin-top: $ds-7;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: $ds-7 0 0 0;
+            li{
+                &:nth-child(5){
+                    padding: 0 $ds-1  $ds-9;
+                }
+                width: 20%;
+                text-align: center;
+                
+                a{
+                    display: inline-block;
+                    position: relative;
+                    text-decoration: none;
+                    &::after{
+                        display: block;
+                        content: "";
+                        width: 48px;
+                        border-bottom: 2px solid $color-grey-10;
+                        position: absolute;
+                        bottom: 34%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        transition: .3s all;
+                    }
+                    &:hover::after{
+                        width: 55%;
+                        border-color: $color-green-1;
+                    }
+                    img{
+                        display: inline-block;
+                        width: 48px;
+                        height: 48px;
+                        margin: 0 $ds-8 $ds-4 - 1;
+                    }
+                    p{
+                        @include styleText($color-black-1,$fs-0,$fw-0);
+                        letter-spacing: 1px;
+                        margin: 0;
+                    }
+                } 
+                
+            }
+        }
+    }
+}

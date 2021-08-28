@@ -1,0 +1,29 @@
+.selling{
+    margin-bottom: 96px;
+    background-color: #f1fdf7;
+    .selling__content{
+        display: flex;
+        padding: 96px 0;
+        .selling__left{
+            padding-right: 24%;
+            .selling__text{
+                .selling__text__content{
+                    @include styleIconAndText($color-grey-4,$color-black-1);
+                    margin-bottom: $ds-1;
+                }
+                p:last-child{
+                    font-size: $fs-18;
+                    line-height: 26px;
+                    color: $color-grey-2;
+                }
+            }
+        }
+        .selling__video{
+            position: relative;
+            padding: 0;
+            .selling__icon__play{
+                @include iconPlay();
+            }
+        }
+    }
+}
